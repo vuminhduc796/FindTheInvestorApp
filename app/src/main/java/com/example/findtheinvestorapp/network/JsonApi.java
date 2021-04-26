@@ -2,6 +2,7 @@ package com.example.findtheinvestorapp.network;
 
 import com.example.findtheinvestorapp.model.BusinessItemList;
 import com.example.findtheinvestorapp.model.InvestorList;
+import com.example.findtheinvestorapp.model.ProposalItemList;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -12,4 +13,8 @@ public interface JsonApi {
 
     @GET("investorprofile/getAllInvestorProfiles")
     Call <InvestorList> getInvestorList();
+
+    @GET("proposal/getAllProposals")
+    Call <ProposalItemList> getProposalList();
+
 }

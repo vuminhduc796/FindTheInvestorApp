@@ -6,13 +6,38 @@
         android:title="Business"
         android:icon="@drawable/ic_baseline_business_center_24"/>
     <item
+        android:id="@+id/navigation_proposalId"
+        android:title="Proposals"
+        android:icon="@drawable/ic_baseline_business_center_24"/>
+
+    <item
         android:id="@+id/navigation_investorId"
         android:title="Investors"
         android:icon="@drawable/ic_baseline_investor_24"/>
+    <item
+        android:id="@+id/navigation_investorpodiumId"
+        android:title="Investors Podium"
+        android:icon="@drawable/ic_baseline_business_center_24"/>
+    <item
+        android:id="@+id/navigation_consultantId"
+        android:title="Consultant"
+        android:icon="@drawable/ic_baseline_more_horiz_24"/>
+    <item
+        android:id="@+id/navigation_pricingId"
+        android:title="Pricing"
+        android:icon="@drawable/ic_baseline_more_horiz_24"/>
     <item
         android:id="@+id/navigation_moreId"
         android:title="More"
         android:icon="@drawable/ic_baseline_more_horiz_24"/>
 
 
+    <item
+        android:id="@+id/navigation_successStoryId"
+        android:title="Success Stories"
+        android:icon="@drawable/ic_baseline_more_horiz_24"/>
+    <item
+        android:id="@+id/navigation_contactUsId"
+        android:title="Contact Us"
+        android:icon="@drawable/ic_baseline_more_horiz_24"/>
 </menu>

@@ -1,4 +1,4 @@
-package com.example.findtheinvestorapp;
+package com.example.findtheinvestorapp.controller.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +11,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.Volley;
+import com.example.findtheinvestorapp.controller.BusinessDetailActivity;
+import com.example.findtheinvestorapp.R;
+import com.example.findtheinvestorapp.controller.adapter.BusinessAdapter;
 import com.example.findtheinvestorapp.model.BusinessItem;
 import com.example.findtheinvestorapp.model.BusinessItemList;
 import com.example.findtheinvestorapp.network.JsonApi;

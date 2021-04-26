@@ -1,4 +1,4 @@
-package com.example.findtheinvestorapp;
+package com.example.findtheinvestorapp.controller.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -22,6 +22,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
+import com.example.findtheinvestorapp.R;
 import com.example.findtheinvestorapp.model.BusinessItem;
 import com.example.findtheinvestorapp.model.BusinessItemList;
 import com.example.findtheinvestorapp.model.InvestorList;

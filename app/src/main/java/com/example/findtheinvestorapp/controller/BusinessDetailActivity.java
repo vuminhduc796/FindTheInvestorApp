@@ -1,4 +1,4 @@
-package com.example.findtheinvestorapp;
+package com.example.findtheinvestorapp.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.findtheinvestorapp.R;
 import com.example.findtheinvestorapp.model.BusinessItem;
 
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;

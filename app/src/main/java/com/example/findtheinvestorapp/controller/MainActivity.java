@@ -1,21 +1,23 @@
-package com.example.findtheinvestorapp;
+package com.example.findtheinvestorapp.controller;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
+import com.example.findtheinvestorapp.R;
+import com.example.findtheinvestorapp.controller.fragment.BusinessFragment;
+import com.example.findtheinvestorapp.controller.fragment.InvestorFragment;
+import com.example.findtheinvestorapp.controller.fragment.MoreFragment;
+import com.example.findtheinvestorapp.controller.fragment.ProposalFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -43,12 +45,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
 
-        bottomNavigationView = findViewById ( R.id.bottomNavigationView );
+        //bottomNavigationView = findViewById ( R.id.bottomNavigationView );
         frameLayout = findViewById ( R.id.frameLayoutId );
 
-        setFragment(new BusinessFragment ());
+        setFragment(new BusinessFragment());
 
-        bottomNavigationView.setOnNavigationItemSelectedListener ( new BottomNavigationView.OnNavigationItemSelectedListener ( ) {
+/*        bottomNavigationView.setOnNavigationItemSelectedListener ( new BottomNavigationView.OnNavigationItemSelectedListener ( ) {
             @Override
             public boolean onNavigationItemSelected ( @NonNull MenuItem item ) {
 
@@ -74,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             }
         } );
-
+*/
         drawerLayout = findViewById ( R.id.drawerLayout );
         navigationView = findViewById ( R.id.navigation_drawer_view );
         toggle = new ActionBarDrawerToggle ( this, drawerLayout, R.string.start, R.string.close );
@@ -112,11 +114,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 setFragment(new BusinessFragment ());
                 break;
             case R.id.navigation_investorId:
-                setFragment(new InvestorFragment ());
+                setFragment(new InvestorFragment());
                 break;
             case R.id.navigation_moreId:
-                setFragment(new MoreFragment ());
+                setFragment(new MoreFragment());
                 break;
+            case R.id.navigation_proposalId:
+                setFragment(new ProposalFragment());
+                break;
+
         }
         return true;
     }

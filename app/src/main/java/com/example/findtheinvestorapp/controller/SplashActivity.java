@@ -1,4 +1,4 @@
-package com.example.findtheinvestorapp;
+package com.example.findtheinvestorapp.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.findtheinvestorapp.R;
+import com.example.findtheinvestorapp.controller.MainActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -38,7 +40,7 @@ public class SplashActivity extends AppCompatActivity {
                 }catch (InterruptedException e){
                     e.printStackTrace ();
                 }
-                Intent intent = new Intent ( getApplicationContext (),MainActivity.class );
+                Intent intent = new Intent ( getApplicationContext (), MainActivity.class );
                 startActivity ( intent );
                 finish();
 

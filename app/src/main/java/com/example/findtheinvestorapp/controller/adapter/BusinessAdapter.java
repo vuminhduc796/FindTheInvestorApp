@@ -1,4 +1,4 @@
-package com.example.findtheinvestorapp;
+package com.example.findtheinvestorapp.controller.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.findtheinvestorapp.R;
 import com.example.findtheinvestorapp.model.BusinessItem;
 import com.squareup.picasso.Picasso;
 
@@ -45,7 +46,7 @@ public class BusinessAdapter extends RecyclerView.Adapter<BusinessAdapter.Busine
         String companyName = currentItem.getCompanyName();
         String companyDesc = currentItem.getProductsAndServices();
         holder.mTextViewCompany.setText(companyName);
-        holder.mTextViewCompanyDesc.setText("Decription: " + companyDesc);
+        holder.mTextViewCompanyDesc.setText("Description: " + companyDesc);
         Picasso.with ( mContext ).load ( imageUrl ).fit ().centerInside ().into ( holder.mImageView );
 
 
