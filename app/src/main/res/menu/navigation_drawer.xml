@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_businessId"
+        android:title="Business"
+        android:icon="@drawable/ic_baseline_business_center_24"/>
+    <item
+        android:id="@+id/navigation_investorId"
+        android:title="Investors"
+        android:icon="@drawable/ic_baseline_investor_24"/>
+    <item
+        android:id="@+id/navigation_moreId"
+        android:title="More"
+        android:icon="@drawable/ic_baseline_more_horiz_24"/>
+
+
+</menu>
